@@ -1,0 +1,56 @@
+IMAPAccount gmail
+Host imap.gmail.com
+User lewinkoon@gmail.com
+Passcmd "pass email/personal"
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPStore gmail-remote
+Account gmail
+
+MaildirStore gmail-local
+Subfolders Verbatim
+Path ~/.local/share/mail/gmail/
+Inbox ~/.local/share/mail/gmail/inbox
+
+Channel gmail-inbox
+Master :gmail-remote:
+Slave :gmail-local:
+Patterns "INBOX"
+
+Channel gmail-sent
+Master :gmail-remote:"[Gmail]/Sent Mail"
+Slave :gmail-local:sent
+
+Channel gmail-draft
+Master :gmail-remote:"[Gmail]/Drafts"
+Slave :gmail-local:draft
+
+Channel gmail-trash
+Master :gmail-remote:"[Gmail]/Trash"
+Slave :gmail-local:trash
+
+Channel gmail-university
+Master :gmail-remote:university
+Slave :gmail-local:university
+
+Channel gmail-notifications
+Master :gmail-remote:notifications
+Slave :gmail-local:notifications
+
+Channel gmail-archive
+Master :gmail-remote:keep
+Slave :gmail-local:archive
+
+Group gmail
+Channel gmail-inbox
+Channel gmail-sent
+Channel gmail-draft
+Channel gmail-trash
+Channel gmail-notifications
+Channel gmail-university
+Channel gmail-archive
+
+Create Both
+Expunge Both
+SyncState *
