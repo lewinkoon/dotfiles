@@ -1,0 +1,30 @@
+ncmpcpp_directory = ~/.config/ncmpcpp
+lyrics_directory = ~/.config/mpd/lyrics/
+mpd_music_dir = "~/music"
+mpd_host = localhost
+mpd_port = 6600
+mpd_crossfade_time = 5
+
+autocenter_mode = yes
+centered_cursor = yes
+
+visualizer_fifo_path = /tmp/mpd.fifo
+visualizer_output_name = Visualizer feed
+visualizer_in_stereo = yes
+visualizer_sync_interval = 30
+visualizer_type = wave_filled
+visualizer_look = "+|"
+
+song_columns_list_format = (40)[yellow]{t|f:Title} (30)[green]{a} (30)[magenta]{b} (7f)[blue]{l}
+song_list_format = "{[%l]}{%t }$R{%a - %b}"
+song_status_format = "{%a - }{%t - }{%b}"
+now_playing_prefix = "$b$8"
+now_playing_suffix = "$/b$9"
+mouse_support = no
+
+external_editor = vim
+use_console_editor = yes
+
+media_library_primary_tag = album_artist
+user_interface = alternative
+progressbar_look = ―|
