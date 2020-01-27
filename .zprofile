@@ -1,20 +1,15 @@
-# Profile file. Runs on login. Environmental variables are set here.
-
 # Adds `~/.local/bin` to $PATH
-export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
+export PATH="$PATH:$HOME/.local/bin"
 
 # Default programs:
 export EDITOR="nvim"
 export TERMINAL="urxvt"
-export BROWSER="google-chrome-stable"
+export BROWSER="brave"
 export READER="zathura"
 export FILE="ranger"
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"
-export NOTMUCH_CONFIG="$HOME/.config/notmuch/notmuch-config"
-export GTK2_RC_FILES="$HOME/.config/gtk-2.0/gtkrc-2.0"
-export LESSHISTFILE="-"
 export ZDOTDIR="$HOME/.config/zsh"
 export GNUPGHOME="$HOME/.config/gnupg"
 export PASSWORD_STORE_DIR="$HOME/.local/share/password-store"

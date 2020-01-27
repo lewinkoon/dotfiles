@@ -1,4 +1,5 @@
 !! general
+URxvt.iso14755: false
 URxvt*saveLines: 50000
 ! scroll
 URxvt*scrollTtyOutput: false
@@ -10,7 +11,7 @@ URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
 
 !! fonts
-URxvt.font: xft:Roboto Mono for Powerline:size=20
+URxvt.font: xft:Roboto Mono for Powerline:size=18
 
 !! extensions
 URxvt.perl-ext-common:	selection-to-clipboard
