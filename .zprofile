@@ -10,6 +10,7 @@ export FILE="ranger"
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"
+export KITTY_CONFIG_DIRECTORY="$HOME/.config/kitty"
 export ZDOTDIR="$HOME/.config/zsh"
 export GNUPGHOME="$HOME/.config/gnupg"
 export PASSWORD_STORE_DIR="$HOME/.local/share/password-store"

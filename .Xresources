@@ -11,7 +11,7 @@ URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
 
 !! fonts
-URxvt.font: xft:Roboto Mono for Powerline:size=18
+URxvt.font: xft:Roboto Mono for Powerline:size=18,xft:FontAwesome5FreeSolid:size=18
 
 !! extensions
 URxvt.perl-ext-common:	selection-to-clipboard

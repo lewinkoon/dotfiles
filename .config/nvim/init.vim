@@ -9,6 +9,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'lervag/vimtex'
 Plug 'sirver/ultisnips'
 Plug 'KeitaNakamura/tex-conceal.vim'
+Plug 'ap/vim-css-color'
 call plug#end()
 
 set go=a

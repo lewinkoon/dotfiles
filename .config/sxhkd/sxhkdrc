@@ -2,7 +2,7 @@
 super + Return
 	$TERMINAL
 super + d
-	rofi -show drun
+	rofi -show drun -modi drun
 super + r
 	$TERMINAL -name ranger -e $FILE
 super + e
