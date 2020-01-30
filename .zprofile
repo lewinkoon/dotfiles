@@ -3,7 +3,7 @@ export PATH="$PATH:$HOME/.local/bin"
 
 # Default programs:
 export EDITOR="nvim"
-export TERMINAL="urxvt"
+export TERMINAL="st"
 export BROWSER="brave"
 export READER="zathura"
 export FILE="ranger"

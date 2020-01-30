@@ -42,8 +42,6 @@ prompt {
 
 textbox-prompt-colon {
   expand: false;
-  str: ":";
-  text-color: @text;
 }
 
 entry {

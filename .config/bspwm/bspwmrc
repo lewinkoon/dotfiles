@@ -1,6 +1,6 @@
 #! /bin/sh
 
-bspc monitor -d I II III IV V VI VII VIII
+bspc monitor -d I II III IV V VI VII
 
 bspc config border_width         2
 bspc config window_gap          30
@@ -10,14 +10,14 @@ bspc config split_ratio          0.5
 bspc config single_monocle	 true
 bspc config borderless_monocle   true
 
-bspc rule -a URxvt desktop='I' follow=on
-bspc rule -a URxvt:ranger desktop='II' follow=on
+bspc rule -a St desktop='I' follow=on
+bspc rule -a ranger desktop='II' follow=on
 bspc rule -a Brave-browser desktop='III' follow=on
-bspc rule -a URxvt:neomutt desktop='IV' follow=on
-bspc rule -a URxvt:irssi desktop='V' follow=on
-bspc rule -a URxvt:ncmpcpp desktop='VI' follow=on
-bspc rule -a URxvt:newsboat desktop='VII' follow=on
-bspc rule -a URxvt:gcalcli desktop='VIII' follow=on
+bspc rule -a neomutt desktop='IV' follow=on
+bspc rule -a irssi desktop='V' follow=on
+bspc rule -a ncmpcpp desktop='VI' follow=on
+bspc rule -a newsboat desktop='VII' follow=on
+bspc rule -a gcalcli desktop='VIII' follow=on
 bspc rule -a Zathura state=tiled
 
 # polybar
