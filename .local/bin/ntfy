@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+killall dunst
+dunst &
+notify-send "Hello" "This is a test"

@@ -28,8 +28,8 @@ scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 
 modules-left = bspwm
-modules-center = date
-modules-right = ethernet wifi pulseaudio cpu battery
+modules-center = time
+modules-right = ethernet wifi cpu pulseaudio battery
 
 [settings]
 throttle-output = 5
@@ -70,7 +70,7 @@ animation-charging-framerate = 750
 type = internal/cpu
 interval = 1
 format = <label>
-label =   %percentage%%
+label =   %percentage%%
 
 [module/memory]
 type = internal/memory
@@ -84,7 +84,7 @@ host = localhost
 port = 6600
 interval = 2
 
-format-online = <icon-prev>  <toggle>  <icon-next>  <label-song>
+format-online = <label-song>
 icon-play = 
 icon-pause = 
 icon-stop = 
@@ -108,19 +108,16 @@ label-connected = %essid%
 [module/pulseaudio]
 type = internal/pulseaudio
 sink = @DEFAULT_SINK@
-use-ui-max = true
-interval = 5
 
 format-volume = <ramp-volume>  <label-volume>
 label-muted =   muted
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
+ramp-volume-0 = 
+ramp-volume-1 = 
 
-[module/date]
+[module/time]
 type = internal/date
 interval = 1.0
-time = %a %d %b, %H:%M
+time = %I:%M %p
 time-alt = %H:%M:%S
 
 format = <label>
@@ -172,12 +169,11 @@ type = internal/bspwm
 fuzzy-match = false
 
 ws-icon-0 = I;
-ws-icon-1 = II;
-ws-icon-2 = III;
-ws-icon-3 = IV;
-ws-icon-4 = V;
-ws-icon-5 = VI;
-ws-icon-6 = VII;
+ws-icon-1 = II;
+ws-icon-2 = III;
+ws-icon-3 = IV;
+ws-icon-4 = V;
+ws-icon-5 = VI;
 
 format = <label-state>
 

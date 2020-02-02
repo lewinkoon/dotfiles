@@ -1,12 +1,14 @@
 # Simple X Hotkey Daemon config
 super + Return
 	$TERMINAL
+super + shift + Return
+	samedir
 super + d
-	rofi -show run -terminal st
+	rofi -show drun -modi "ssh,drun" -terminal st
 super + p
 	passmenu
 super + r
-	$TERMINAL -c ranger -e $FILE
+	$TERMINAL -e $FILE
 super + e
 	$TERMINAL -c neomutt -e neomutt
 super + m
@@ -16,34 +18,50 @@ super + n
 super + i
 	$TERMINAL -c irssi -e irssi --config=~/.config/irssi/config --home=~/.config/irssi
 super + v
-	$TERMINAL -e nvim -c VimwikiIndex
+	$TERMINAL -c pulsemixer -e pulsemixer
+super + y
+	$TERMINAL -c youtube -e youtube-viewer
 super + b
 	$BROWSER
+super + F1
+	dmount
+super + F2
+	dunmount
 super + F3
+	mbsync -a && notify-send "📧 mbsync" "mailbox has been updated"
+super + F4
 	ntfy
 
 super + Menu
 	showclip
-super + u
-	rofiunicode
+super + shift + Menu
+	dunicode
 super + shift + x
-	prompt "Shutdown computer?" "sudo -A shutdown -h now"
+	prompt "shutdown computer?" "sudo -A shutdown -h now"
 super + shift + BackSpace
-	prompt "Reboot computer?" "sudo -A reboot"
+	prompt "reboot computer?" "sudo -A reboot"
 super + shift + Escape
-	prompt 'Leave Xorg?' 'killall Xorg'
+	prompt 'leave xorg?' 'killall Xorg'
 super + x
-	i3lock
+	slock & mpc pause
 XF86MonBrightnessDown
 	light -U 5
 XF86MonBrightnessUp
 	light -A 5
 XF86AudioRaiseVolume
-	pactl set-sink-volume @DEFAULT_SINK@ +5%; pkill -RTMIN+1 $STATUSBAR
+	pactl set-sink-volume @DEFAULT_SINK@ +5%
 XF86AudioLowerVolume
-	pactl set-sink-volume @DEFAULT_SINK@ -5% && pkill -RTMIN+1 $STATUSBAR
+	pactl set-sink-volume @DEFAULT_SINK@ -5%
 XF86AudioMute
-	pactl set-sink-mute @DEFAULT_SINK@ toggle & pkill -RTMIN+1 $STATUSBAR
+	pactl set-sink-mute @DEFAULT_SINK@ toggle &
+XF86AudioPlay
+	mpc play
+XF86AudioStop
+	mpc pause
+XF86AudioNext
+	mpc next
+XF86AudioPrev
+	mpc prev
 
 #
 # bspwm hotkeys
@@ -60,10 +78,6 @@ super + {_,shift + }q
 # alternate between the tiled and monocle layout
 super + shift + m
 	bspc desktop -l next
-
-# send the newest marked node to the newest preselected node
-super + y
-	bspc node newest.marked.local -n newest.!automatic.local
 
 # swap the current node and the biggest node
 super + g

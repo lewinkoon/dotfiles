@@ -1,6 +1,6 @@
 [global]
     monitor = 0
-    geometry = "320x5-15+15"
+    geometry = "320x5-30+58"
     padding = 10
     horizontal_padding = 10
     frame_width = 2
@@ -25,7 +25,7 @@
     dmenu = /usr/bin/rofi -dmenu -p dunst:
     browser = $BROWSER -new-tab
 
-    #format = "<b>%s</b>\n%b"
+    format = "<b>%s</b>\n%b"
 
 [shortcuts]
     close = ctrl+space

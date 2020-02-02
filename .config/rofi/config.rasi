@@ -1,90 +1,9 @@
-* {
-  black:      #1d1f21;
-  grey:	      #969896;
-  red:        #cc342b;
-  green:      #198844;
-  yellow:     #fba922;
-  blue:       #3971ed;
-  purple:     #a36ac7;
-  cyan:       #6cdcf7;
-  emphasis:   #50536b;
-  text:       #fcfcfc;
-  fg:         #c5c8c6;
-  bg:         #1d1f21;
-
-  spacing: 0;
-  background-color: transparent;
-
-  font: "Roboto Mono 14";
-  text-color: @text;
+/* Rofi config file */
+configuration {
+    font: "Roboto Mono 14";
+    show-icons: false;
+    icon-theme: "Papirus";
+    theme: "onedark";
+    display-drun: "Search";
+    scroll-method: 1;
 }
-
-window {
-  transparency: "real";
-  fullscreen: false;
-  background-color: #1d1f21dd;
-  width: 33%;
-  height: 50%;
-}
-
-mainbox {
-  padding: 3% 2%;
-}
-
-inputbar {
-  margin: 0px 0px 10px 0px;
-  children: [prompt, textbox-prompt-colon, entry];
-}
-
-prompt {
-  text-color: @blue;
-}
-
-textbox-prompt-colon {
-  expand: false;
-}
-
-entry {
-  margin: 0px 10px;
-}
-
-listview {
-  spacing: 5px;
-  dynamic: true;
-  scrollbar: false;
-}
-
-element {
-  padding: 5px;
-  text-color: @text;
-  highlight: bold #fba922; /* yellow */
-  border-radius: 3px;
-}
-
-element selected {
-  background-color: @emphasis;
-  text-color: @text;
-}
-
-element urgent, element selected urgent {
-  text-color: @red;
-}
-
-element active, element selected active {
-  text-color: @purple;
-}
-
-message {
-  padding: 5px;
-  border-radius: 3px;
-  background-color: @emphasis;
-  border: 1px;
-  border-color: @blue;
-}
-
-button selected {
-  padding: 5px;
-  border-radius: 3px;
-  background-color: @emphasis;
-}
-

@@ -1,7 +1,7 @@
 #show-read-feeds no
 auto-reload yes
 
-external-url-viewer "urlscan -dc -r 'linkhandler {}'"
+#external-url-viewer "urlscan -dc -r 'linkhandler {}'"
 
 bind-key j down
 bind-key k up
@@ -26,7 +26,7 @@ bind-key x pb-delete
 color listfocus blue black standout
 color listnormal_unread default default bold
 color listfocus_unread blue black standout bold
-color info blue black bold
+color info blue default bold
 #color article cyan default
 
 browser linkhandler

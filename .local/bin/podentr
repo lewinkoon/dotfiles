@@ -1,0 +1,5 @@
+#!/bin/sh
+# entr command to run when newsboat queue is changed
+
+file=$HOME/.local/share/newsboat/queue
+echo $file | entr -p podplay

@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+
+# The famous "get a menu of emojis to copy" script.
+
+# Must have xclip installed to even show menu.
+xclip -h >/dev/null || exit
+
+chosen=$(grep -v "#" ~/.local/share/emoji | dmenu -fn monospace-18 -l 10 -b -i -nb '#1d1f21' -nf '#c5c8c6' -sf '#1d1f21' -sb '#fba922' -p emoji)
+
+[ "$chosen" != "" ] || exit
+
+c=$(echo "$chosen" | sed "s/ .*//")
+echo "$c" | tr -d '\n' | xclip -selection clipboard
+notify-send "'$c' copied to clipboard." &
+
+s=$(echo "$chosen" | sed "s/.*; //" | awk '{print $1}')
+echo "$s" | tr -d '\n' | xclip
+notify-send "'$s' copied to primary." &

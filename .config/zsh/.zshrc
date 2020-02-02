@@ -1,3 +1,6 @@
+# zsh config
+ufetch
+
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
@@ -5,9 +8,11 @@ PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magent
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
 autoload -Uz compinit promptinit
+compinit
+promptinit
+
 zstyle ':completion:*' menu select
 zmodload zsh/complist
-compinit
 
 # Include hidden files in autocomplete:
 _comp_options+=(globdots)
@@ -49,4 +54,3 @@ preexec() { echo -ne '\e[5 q' ;}
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-

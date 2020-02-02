@@ -1,0 +1,4 @@
+#!/bin/sh
+
+file=$HOME/.local/share/newsboat/queue
+mpc clear >/dev/null && mpc insert $(tail -n 1 $file | awk '{print $1}') && mpc play >/dev/null && >$file

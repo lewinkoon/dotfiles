@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+# This script is the SUDO_ASKPASS variable, meaning that it will be used as a
+# password prompt if needed.
+
+dmenu -fn "Roboto Mono:pixelsize=16" -b -sb "#fba922" -sf "#1d1f21" -nf "#c5c8c6" -nb "#1d1f21" -p "$1" <&-
