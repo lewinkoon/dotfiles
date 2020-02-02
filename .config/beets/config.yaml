@@ -1,0 +1,2 @@
+directory: ~/music            # The default library root directory.
+library: ~/.config/beets/library.db   # The default library database file to use.

@@ -1,0 +1,63 @@
+#!/bin/sh
+
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	cat="bat" \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -v" \
+	mkdir="mkdir -pv" \
+	yt="youtube-dl --add-metadata -i" \
+	yta="yt -x -f bestaudio/best" \
+	ffmpeg="ffmpeg -hide_banner"
+
+# Colorize commands when possible.
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto"
+
+# change directory
+alias \
+	h="cd ~/" \
+	dc="cd ~/documents" \
+	dw="cd ~/downloads" \
+	mu="cd ~/music" \
+	pp="cd ~/pictures" \
+	vv="cd ~/videos" \
+	bu="cd ~/builds" \
+	cf="cd ~/.config" \
+	sc="cd ~/.local/bin" \
+	mn="cd /mnt"
+
+# open file
+alias \
+	cfa="$EDITOR ~/.config/aliasrc" \
+	cfz="$EDITOR ~/.config/zsh/.zshrc" \
+	cfv="$EDITOR ~/.config/nvim/init.vim" \
+	cfm="$EDITOR ~/.config/neomutt/muttrc" \
+	cfd="$EDITOR ~/.Xresources" \
+	cfu="$EDITOR ~/.config/newsboat/urls" \
+	cfn="$EDITOR ~/.config/newsboat/config" \
+	cfmc="$EDITOR ~/.config/ncmpcpp/config" \
+	cfk="$EDITOR ~/.config/sxhkd/sxhkdrc" \
+	cfb="$EDITOR ~/.config/bspwm/bspwmrc"
+
+# These common commands are just too long! Abbreviate them.
+alias \
+	ka="killall" \
+	g="git" \
+	sdn="sudo shutdown -h now" \
+	f="$FILE" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	p="sudo pacman" \
+	tr="transmission-remote 127.0.0.1"
+
+# Some other stuff
+alias \
+	ddgr="ddgr -n 3" \
+	magit="nvim -c MagitOnly" \
+	weath="less -S ~/.local/share/weatherreport" \
+	gcalcli="gcalcli --config-folder ~/.config/gcalcli" \
+	irssi="irssi --config=~/.config/irssi/config --home=~/.config/irssi" \
+	config="/usr/bin/git --git-dir=$HOME/code/dotfiles/ --work-tree=$HOME" \
