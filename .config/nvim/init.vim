@@ -1,4 +1,5 @@
 let mapleader =","
+let maplocalleader = " "
 
 call plug#begin('~/.config/nvim/plugged')
 Plug 'scrooloose/nerdtree'

@@ -28,7 +28,7 @@ super + F1
 super + F2
 	dunmount
 super + F3
-	mbsync -a && notify-send "📧 mbsync" "mailbox has been updated"
+	mbsync -a && notify-send "mbsync" "mailbox has been updated"
 super + F4
 	ntfy
 

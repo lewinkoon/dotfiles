@@ -1,15 +1,16 @@
 # zsh config
 ufetch
 
+setopt hist_ignore_all_dups inc_append_history
+HISTFILE=~/.cache/zhistory
+HISTSIZE=4096
+SAVEHIST=4096
+
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
-# Load aliases and shortcuts if existent.
-[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
-
-autoload -Uz compinit promptinit
+autoload -Uz compinit
 compinit
-promptinit
 
 zstyle ':completion:*' menu select
 zmodload zsh/complist
@@ -51,6 +52,9 @@ zle -N zle-line-init
 echo -ne '\e[5 q'
 # Use beam shape cursor for each new prompt.
 preexec() { echo -ne '\e[5 q' ;}
+
+# Load aliases and shortcuts if existent.
+[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null

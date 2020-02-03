@@ -6,7 +6,7 @@ export EDITOR="nvim"
 export TERMINAL="st"
 export BROWSER="brave"
 export READER="zathura"
-export FILE="lf"
+export FILE="ranger"
 
 # ~/ Clean-up:
 export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"

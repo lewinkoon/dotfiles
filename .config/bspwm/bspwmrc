@@ -13,15 +13,14 @@ bspc config borderless_monocle   true
 bspc rule -a St desktop='I' follow=on state=pseudo_tiled
 bspc rule -a Brave-browser desktop='II' follow=on
 bspc rule -a neomutt desktop='III' follow=on
-bspc rule -a irssi desktop='IV' follow=on
-bspc rule -a ncmpcpp desktop='V' follow=on state=pseudo_tiled
-bspc rule -a newsboat desktop='VI' follow=on state=pseudo_tiled
-bspc rule -a gcalcli desktop='VII' follow=on
+bspc rule -a ncmpcpp desktop='IV' follow=on state=pseudo_tiled
+bspc rule -a newsboat desktop='V' follow=on state=pseudo_tiled
+bspc rule -a irssi desktop='VI' follow=on
 bspc rule -a Zathura state=tiled
-bspc rule -a pulsemixer state=floating
+bspc rule -a pulsemixer state=pseudo_tiled
 bspc rule -a youtube state=pseudo_tiled
 bspc rule -a mpv state=pseudo_tiled
-bspc rule -a feh state=pseudo_tiled
+bspc rule -a Sxiv state=pseudo_tiled
 
 # polybar
 launch_polybar &

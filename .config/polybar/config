@@ -171,9 +171,9 @@ fuzzy-match = false
 ws-icon-0 = I;
 ws-icon-1 = II;
 ws-icon-2 = III;
-ws-icon-3 = IV;
-ws-icon-4 = V;
-ws-icon-5 = VI;
+ws-icon-3 = IV;
+ws-icon-4 = V;
+ws-icon-5 = VI;
 
 format = <label-state>
 
