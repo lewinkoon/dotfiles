@@ -4,11 +4,11 @@ super + Return
 super + shift + Return
 	samedir
 super + d
-	rofi -show drun -modi "ssh,drun" -terminal st
+	dmenu_run -fn 'Roboto Mono:pixelsize=16' -b -i -nb '#1d1f21' -nf '#c5c8c6' -sf '#1d1f21' -sb '#fba922' -p 'Run'
 super + p
 	passmenu
 super + r
-	$TERMINAL -e $FILE
+	$TERMINAL -c ranger -e $FILE
 super + e
 	$TERMINAL -c neomutt -e neomutt
 super + m
@@ -21,8 +21,12 @@ super + v
 	$TERMINAL -c pulsemixer -e pulsemixer
 super + y
 	$TERMINAL -c youtube -e youtube-viewer
+super + w
+	$TERMINAL -e tremc
 super + b
 	$BROWSER
+super + Escape
+	ntfy
 super + F1
 	dmount
 super + F2
@@ -30,7 +34,7 @@ super + F2
 super + F3
 	mbsync -a && notify-send "mbsync" "mailbox has been updated"
 super + F4
-	ntfy
+	td-toogle
 
 super + Menu
 	showclip

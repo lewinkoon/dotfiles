@@ -2,7 +2,7 @@
 # If transmission-daemon is running, will ask to kill, else will ask to start.
 if pgrep -x transmission-da >/dev/null ;
 then
-	killall transmission-daemon && notify-send "transmission-daemon killed."
+	killall transmission-daemon && notify-send "transmission-daemon" "process killed"
 else
-	transmission-daemon && notify-send "tranmission-daemon started."
+	transmission-daemon && notify-send "tranmission-daemon" "process started"
 fi

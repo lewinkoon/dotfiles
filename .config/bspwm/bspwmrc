@@ -1,6 +1,6 @@
 #! /bin/sh
 
-bspc monitor -d I II III IV V VI
+bspc monitor -d I II III IV V VI VII
 
 bspc config border_width         2
 bspc config window_gap          30
@@ -11,11 +11,12 @@ bspc config single_monocle	 true
 bspc config borderless_monocle   true
 
 bspc rule -a St desktop='I' follow=on state=pseudo_tiled
-bspc rule -a Brave-browser desktop='II' follow=on
-bspc rule -a neomutt desktop='III' follow=on
-bspc rule -a ncmpcpp desktop='IV' follow=on state=pseudo_tiled
-bspc rule -a newsboat desktop='V' follow=on state=pseudo_tiled
-bspc rule -a irssi desktop='VI' follow=on
+bspc rule -a ranger desktop='II' follow=on state=pseudo_tiled
+bspc rule -a Brave-browser desktop='III' follow=on
+bspc rule -a neomutt desktop='IV' follow=on
+bspc rule -a ncmpcpp desktop='V' follow=on state=pseudo_tiled
+bspc rule -a newsboat desktop='VI' follow=on state=pseudo_tiled
+bspc rule -a irssi desktop='VII' follow=on
 bspc rule -a Zathura state=tiled
 bspc rule -a pulsemixer state=pseudo_tiled
 bspc rule -a youtube state=pseudo_tiled
