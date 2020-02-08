@@ -50,7 +50,8 @@ alias \
 	e="$EDITOR" \
 	v="$EDITOR" \
 	p="sudo pacman" \
-	tr="transmission-remote 127.0.0.1"
+	tr="transmission-remote 127.0.0.1" \
+	abook="abook --datafile $HOME/.config/abook/addressbook"
 
 # Some other stuff
 alias \
