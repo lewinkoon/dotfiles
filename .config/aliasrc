@@ -26,7 +26,8 @@ alias \
 	bu="cd ~/builds" \
 	cf="cd ~/.config" \
 	sc="cd ~/.local/bin" \
-	mn="cd /mnt"
+	mn="cd /mnt" \
+	bl="cd ~/code/web/content/posts"
 
 # open file
 alias \
@@ -44,13 +45,12 @@ alias \
 # These common commands are just too long! Abbreviate them.
 alias \
 	ka="killall" \
-	g="git" \
 	sdn="sudo shutdown -h now" \
 	f="$FILE" \
 	e="$EDITOR" \
 	v="$EDITOR" \
 	p="sudo pacman" \
-	tr="transmission-remote 127.0.0.1" \
+	trem="transmission-remote 127.0.0.1" \
 	abook="abook --datafile $HOME/.config/abook/addressbook"
 
 # Some other stuff

@@ -1,6 +1,5 @@
 # Adds `~/.local/bin` to $PATH
-export PATH="$PATH:$HOME/.local/bin"
-
+export PATH="$PATH:$HOME/.local/bin:$(ruby -e 'puts Gem.user_dir')/bin"
 # Default programs:
 export EDITOR="nvim"
 export TERMINAL="st"
