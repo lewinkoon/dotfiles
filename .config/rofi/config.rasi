@@ -1,0 +1,8 @@
+configuration {
+    font: "Roboto Mono 14";
+    show-icons: false;
+    icon-theme: "Papirus";
+    theme: "colors";
+    display-drun: "Search";
+    scroll-method: 1;
+}
