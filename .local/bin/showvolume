@@ -1,0 +1,17 @@
+#!/bin/sh
+
+level=$(pulsemixer --get-volume | cut -d " " -f1)
+if [[ $(pulsemixer --get-mute) -eq 1 ]]
+then
+  mute="MUTED"
+else
+  mute="UNMUTED"
+fi
+
+while getopts "lm" option; do
+  case $option in
+    l) notify-send -i audio -h int:value:$level "Pipewire" "Volume level" ;;
+    m) notify-send -i audio "Pipewire" "Volume level is $mute" ;;
+  esac
+done
+
