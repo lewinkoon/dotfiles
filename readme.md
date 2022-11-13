@@ -1,7 +1,5 @@
 # Archlinux dotfiles
 
-![image](https://user-images.githubusercontent.com/57636993/193429916-08621088-d47e-4f18-8d8d-1ed4521ae781.png)
-
 These are the dotfiles for my custom archlinux based desktop. It contains configuration scripts for popular program in linux environment.
 
 ### 📺 Media
