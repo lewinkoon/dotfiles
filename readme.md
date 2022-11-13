@@ -10,7 +10,7 @@ These are the dotfiles for my custom archlinux based desktop. It contains config
 - **[Neovim](https://github.com/neovim/neovim)** : powerful text editor with a big community that is constantly growing
 - **[Picom](https://github.com/yshui/picom)** : standalone compositor for Xorg
 - **[Polybar](https://github.com/polybar/polybar)** : fast and easy-to-use tool for creating status bars
-- **[Rofi](https://github.com/davatorium/rofi)** : window switcher, run dialog, ssh-launcher and dmenu replacement that started as a clone of simpleswitcher
+- **[Rofi](https://github.com/davatorium/rofi)** : window switcher, run dialog, ssh-launcher and dmenu replacement
 - **[Starship](https://github.com/starship/starship)** : minimal, blazing-fast, and infinitely customizable prompt for any shell
 - **[Sxhkd](https://github.com/baskerville/sxhkd)** : simple X hotkey daemon
 - **[Zsh](https://www.zsh.org/)** : powerful shell that operates as both an interactive shell and as a scripting language interpreter
