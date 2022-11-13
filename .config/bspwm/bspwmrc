@@ -1,0 +1,31 @@
+#!/bin/sh
+
+bspc monitor DP-0 -d 1
+bspc monitor DP-2 -d 2
+
+bspc config active_border_color \#3a86ff
+bspc config focused_border_color \#ffbe0b
+bspc config border_width 1
+bspc config window_gap 20
+
+bspc config split_ratio 0.5
+bspc config single_monocle true
+#bspc config borderless_monocle true
+bspc config gapless_monocle true
+
+bspc rule -a Alacritty desktop='1' follow=on state=tiled
+bspc rule -a lf desktop='1' follow=on state=tiled
+bspc rule -a neomutt desktop='1' follow=on
+bspc rule -a ncmpcpp desktop='1' follow=on state=tiled
+bspc rule -a newsboat desktop='1' follow=on state=tiled
+bspc rule -a pulsemixer follow=on state=tiled
+bspc rule -a Sxiv state=pseudo_tiled
+
+bspc rule -a mpv state=pseudo_tiled
+bspc rule -a Zathura state=tiled
+
+bspc rule -a Google-chrome desktop='2' follow=on
+bspc rule -a Bitwarden follow=on state=tiled
+bspc rule -a obsidian follow=on state=tiled
+bspc rule -a obs follow=on state=tiled
+
