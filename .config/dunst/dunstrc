@@ -1,0 +1,55 @@
+[global]
+    monitor = 0
+    follow = keyboard
+
+    ### GEOMETRY ###
+    width = 360
+    height = 180
+    origin = top-right
+    offset = 40x40
+
+    indicate_hidden = yes
+    transparency = 0
+    separator_height = 2
+    padding = 10
+    horizontal_padding = 10
+    frame_width = 3
+    frame_color = "#3a86ff"
+    separator_color = frame
+    sort = yes
+    idle_threshold = 120
+    font = monospace 12
+    line_height = 0
+    markup = full
+    format = "<b>%s</b>\n%b"
+    word_wrap = yes
+    hide_duplicate_count = yes
+    history_length = 20
+
+    ### ICONS ###
+    enable_recursive_icon_lookup = false
+    icon_theme = Papirus
+    icon_position = left
+    min_icon_size = 32
+    max_icon_size = 128
+    icon_path = /home/me/.local/share/icons
+
+[urgency_low]
+    background = "#232323"
+    foreground = "#a8a8a8"
+    highlight = "#3a86ff"
+    timeout = 10
+
+[urgency_normal]
+    background = "#343a40"
+    foreground = "#e9ecef"
+    highlight = "#3a86ff"
+    timeout = 10
+
+[urgency_critical]
+    background = "#d64e4e"
+    foreground = "#f0e0e0"
+    frame_color = "#d64e4e"
+    highlight = "#d64e4e"
+    timeout = 0
+# vim: ft=cfg
