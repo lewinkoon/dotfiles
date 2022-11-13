@@ -1,6 +1,6 @@
 # Adds `~/.local/bin` to $PATH
 export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin"
-export RUSTUP_HOME="$HOME/.config/rustup"
+
 # Default programs:
 export EDITOR="nvim"
 export TERMINAL="alacritty"
@@ -9,13 +9,15 @@ export READER="zathura"
 export FILE="lf"
 
 # ~/ Clean-up:
-export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
+export FZF_DEFAULT_COMMAND="find ."
+export GNUPGHOME="$HOME/.config/gnupg"
 export LESSHISTFILE="-"
+export PASSWORD_STORE_DIR="$HOME/.local/share/password-store"
+export RUSTUP_HOME="$HOME/.config/rustup"
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 export XDG_CONFIG_HOME="$HOME/.config"
 export ZDOTDIR="$HOME/.config/zsh"
-export GNUPGHOME="$HOME/.config/gnupg"
-export PASSWORD_STORE_DIR="$HOME/.local/share/password-store"
-export FZF_DEFAULT_COMMAND="find ."
 
 # other program
 export SUDO_ASKPASS="$HOME/.local/bin/dpass"
