@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+[ ! -z "$1" ] && convert "$1" ~/.config/wall/wall.png &&
+convert "$1" -crop 50%x1080 ~/.config/wall/wall.png &&
+notify-send -i "$HOME/.config/wall/wall.png" "Wallpaper changed."
+xwallpaper --output DP-0 --zoom ~/.config/wall/wall-0.png
+xwallpaper --output DP-2 --zoom ~/.config/wall/wall-1.png
