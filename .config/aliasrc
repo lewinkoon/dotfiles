@@ -1,0 +1,55 @@
+#!/bin/sh
+
+# sudo not required for some system commands
+for command in mount umount sv pacman updatedb su shutdown poweroff reboot ; do
+	alias $command="sudo $command"
+done; unset command
+
+# verbosity and settings that you pretty much just always are going to want.
+alias \
+	v="$EDITOR" \
+	f="$FILE" \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -v" \
+	bc="bc -ql" \
+	mkd="mkdir -pv" \
+	ls="exa --long" \
+  cat="bat" \
+	grep="grep --color=auto" \
+	ka="killall" \
+	sdn="shutdown -h now" \
+	p="pacman" \
+  dot="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+
+# change directory
+alias \
+	h="cd ~/" \
+	dc="cd ~/documents" \
+	dw="cd ~/downloads" \
+	mu="cd ~/music" \
+	pp="cd ~/pictures" \
+	vv="cd ~/videos" \
+	bu="cd ~/builds" \
+	cf="cd ~/.config" \
+	sc="cd ~/.local/bin" \
+	mn="cd /mnt"
+
+# open file
+alias \
+	cfa="$EDITOR ~/.config/aliasrc" \
+	cfb="$EDITOR ~/.config/polybar/config.ini" \
+	cfc="$EDITOR ~/.config/picom/picom.conf" \
+	cfd="$EDITOR ~/.config/dunst/dunstrc" \
+	cfk="$EDITOR ~/.config/sxhkd/sxhkdrc" \
+	cfl="$EDITOR ~/.config/lf/lfrc" \
+	cfm="$EDITOR ~/.config/ncmpcpp/config" \
+	cfn="$EDITOR ~/.config/newsboat/config" \
+	cfnu="$EDITOR ~/.config/newsboat/urls" \
+	cfp="$EDITOR ~/.zprofile" \
+	cfs="$EDITOR ~/.config/starship.toml" \
+	cft="$EDITOR ~/.config/alacritty/alacritty.yml" \
+	cfv="$EDITOR ~/.config/nvim/init.lua" \
+	cfw="$EDITOR ~/.config/bspwm/bspwmrc" \
+	cfx="$EDITOR ~/.xinitrc" \
+	cfz="$EDITOR ~/.config/zsh/.zshrc"
