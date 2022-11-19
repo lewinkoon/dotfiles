@@ -14,13 +14,14 @@ alias \
 	rm="rm -v" \
 	bc="bc -ql" \
 	mkd="mkdir -pv" \
-	ls="exa --long" \
+	ls="exa --tree --icons --group-directories-first --level=2" \
   cat="bat" \
 	grep="grep --color=auto" \
 	ka="killall" \
 	sdn="shutdown -h now" \
 	p="pacman" \
-  dot="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+  dot="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME" \
+  td="transmission-daemon"
 
 # change directory
 alias \
@@ -30,7 +31,7 @@ alias \
 	mu="cd ~/music" \
 	pp="cd ~/pictures" \
 	vv="cd ~/videos" \
-	bu="cd ~/builds" \
+	bu="cd ~/build" \
 	cf="cd ~/.config" \
 	sc="cd ~/.local/bin" \
 	mn="cd /mnt"
