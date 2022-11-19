@@ -23,6 +23,8 @@ super + b
 	bitwarden-desktop
 super + x
 	telegram-desktop
+super + a
+	audacity
 
 XF86AudioMute
   pactl set-sink-mute @DEFAULT_SINK@ toggle && showvolume -m
