@@ -2,4 +2,4 @@
 
 killall dunst
 dunst &
-notify-send -i info "Hello" "This is a test"
+notify-send -i info "Test" "Hello world!"
