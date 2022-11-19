@@ -13,4 +13,5 @@ These are the dotfiles for my custom archlinux based desktop. It contains config
 - **[Rofi](https://github.com/davatorium/rofi)** : window switcher, run dialog, ssh-launcher and dmenu replacement
 - **[Starship](https://github.com/starship/starship)** : minimal, blazing-fast, and infinitely customizable prompt for any shell
 - **[Sxhkd](https://github.com/baskerville/sxhkd)** : simple X hotkey daemon
+- **[Zathura](https://github.com/pwmt/zathura)** : highly customizable and functional document viewer based on the girara user interface library
 - **[Zsh](https://www.zsh.org/)** : powerful shell that operates as both an interactive shell and as a scripting language interpreter
