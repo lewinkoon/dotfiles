@@ -12,6 +12,7 @@ set period 1
 map <enter> shell
 map x $$f
 map X !$f
+map e &unzip $f
 map o &mimeopen $f
 map O $mimeopen --ask $f
 map a push :newfile<space>
