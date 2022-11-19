@@ -1,5 +1,5 @@
 # system info
-# ufetch
+pfetch
 
 # history in cache directory
 HISTFILE=~/.cache/zsh/history
