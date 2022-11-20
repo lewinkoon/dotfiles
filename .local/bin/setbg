@@ -2,6 +2,12 @@
 
 #[ ! -z "$1" ] && convert "$1" ~/.config/wall/wall.png &&
 #convert "$1" -crop 50%x1080 ~/.config/wall/wall.png &&
-xwallpaper --output DP-0 --zoom $1
-xwallpaper --output DP-2 --zoom $1
-notify-send -i "$1" "Wallpaper changed."
+
+wallpaper="$HOME/.config/wall"
+if [ ! -z "$1" ]
+then
+  cp $1 $wallpaper
+fi
+xwallpaper --output DP-0 --zoom $wallpaper
+xwallpaper --output DP-2 --zoom $wallpaper
+notify-send -i "$wallpaper" "Wallpaper changed."
