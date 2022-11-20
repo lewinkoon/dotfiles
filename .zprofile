@@ -1,5 +1,6 @@
 # Adds `~/.local/bin` to $PATH
 export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin"
+export WALLPAPER="$HOME/.config/wallpaper"
 
 # Default programs:
 export EDITOR="nvim"
