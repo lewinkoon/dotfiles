@@ -37,19 +37,19 @@
 [urgency_low]
     background = "#24273a"
     foreground = "#cad3f5"
-    #highlight = "#3a86ff"
+    highlight = "#8aadf4"
     timeout = 10
 
 [urgency_normal]
     background = "#24273a"
     foreground = "#cad3f5"
-    #highlight = "#3a86ff"
+    highlight = "#8aadf4"
     timeout = 10
 
 [urgency_critical]
     background = "#24273a"
     foreground = "#cad3f5"
     frame_color = "#f5a97f"
-    #highlight = "#d64e4e"
+    highlight = "#8aadf4"
     timeout = 0
 # vim: ft=cfg
