@@ -5,4 +5,4 @@
 clip=$(xclip -o -selection clipboard)
 prim=$(xclip -o -selection primary)
 
-[ -n "$clip" ] && notify-send "Clipboard" "\n### MAIN ###\n$clip\n\n### PRIMARY ###\n$prim"
+[ -n "$clip" ] && notify-send -i clipboard "Clipboard" "$clip"

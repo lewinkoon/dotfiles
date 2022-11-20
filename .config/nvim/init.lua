@@ -13,6 +13,7 @@ opt.softtabstop = 2
 opt.tabstop = 2
 opt.number = true
 opt.relativenumber = true
+opt.clipboard = 'unnamedplus'
 
 g.mapleader = ' '
 g.maplocalleader = '-'
@@ -24,6 +25,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use { "catppuccin/nvim", as = "mocha" }
+
 
   use {
     'nvim-lualine/lualine.nvim',
