@@ -3,7 +3,7 @@ set shell sh
 set shellopts '-eu'
 set ifs "\n"
 set scrolloff 10
-set hidden on
+set hiddenfiles '.cargo:.cache:.dotfiles:.kodi:.npm:.pki:.vscode-oss:.nvidia-settings-rc:0ad:Bitwarden:Code - OSS:Electron:audacity:dconf:discord:google-chrome:gtk-3.0:libreoffice:obs-studio:obsidian:pulse:rustup:transmission-daemon:QtProject.conf'
 set autoquit on
 set dircounts on
 set period 1
