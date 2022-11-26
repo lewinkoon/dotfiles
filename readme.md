@@ -1,6 +1,6 @@
-# Archlinux dotfiles
+# Dotfiles
 
-These are the dotfiles for my custom archlinux based desktop. It contains configuration files for popular programs in linux environment.
+These are the dotfiles for my custom **archlinux** based desktop. It contains configuration files for popular programs in linux environment as well as some useful bash scripts for common tasks.
 
 ### ⚙️ Configuration files
 
