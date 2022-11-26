@@ -50,6 +50,7 @@ alias \
 	cfp="$EDITOR ~/.zprofile" \
 	cfs="$EDITOR ~/.config/starship.toml" \
 	cft="$EDITOR ~/.config/alacritty/alacritty.yml" \
+	cfu="$EDITOR ~/.config/neomutt/neomuttrc" \
 	cfv="$EDITOR ~/.config/nvim/init.lua" \
 	cfw="$EDITOR ~/.config/bspwm/bspwmrc" \
 	cfx="$EDITOR ~/.xinitrc" \
