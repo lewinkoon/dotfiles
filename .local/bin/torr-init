@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+if pgrep transmission-da >/dev/null ; then
+  killall transmission-daemon &&
+  notify-send -i torrent "Transmission" "Torrent server stopped"
+else
+  transmission-daemon &&
+  notify-send -i torrent "Transmission" "Torrent server started"
+fi
