@@ -19,7 +19,8 @@ map O $mimeopen --ask $f
 map a push :newfile<space>
 map A push :newdir<space>
 map D delete
-map r push :rename<space>
+map r rename
+map R push r<C-u>
 
 ### OPENER ###
 cmd open ${{
@@ -29,11 +30,11 @@ cmd open ${{
 	test/*) notify-send $f $(countrow $f) &;;
 	video/*) setsid mpv --input-ipc-server=/tmp/mpvsoc$(date +%%s) $f -quiet >/dev/null 2>&1 & ;;
 	application/pdf) setsid zathura $fx >/dev/null 2>&1 & ;;
-        *) for f in $fx; do setsid $OPENER $f > /dev/null 2> /dev/null & done;;
+       *) for f in $fx; do setsid $OPENER $f > /dev/null 2> /dev/null & done;;
     esac
 }}
 
 ### CUSTOM COMMANDS ###
-cmd rename %[ -e $1 ] && printf "ERROR : file exists" || mv $f $1
+#cmd rename %[ -e $1 ] && printf "ERROR : file exists" || mv $f $1
 cmd newfile %[ -f $1 ] && printf "ERROR : file exists" || touch $@
 cmd newdir %[ -d $@ ] && printf "ERROR : directory exists" || mkdir $@
