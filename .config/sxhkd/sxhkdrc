@@ -1,6 +1,6 @@
 super + Return
 	$TERMINAL
-super + d
+super + BackSpace
 	dmenu_run -fn 'monospace:pixelsize=16' -nb '#24273a' -nf '#cad3f5' -sb '#91d7e3' -sf '#181926' -i -b -p 'Run'
 super + e
 	$TERMINAL --class $FILE -e $FILE
@@ -25,26 +25,26 @@ super + b
 	bitwarden-desktop
 super + x
 	telegram-desktop
-super + a
-	audacity
 
 XF86AudioMute
-  pactl set-sink-mute @DEFAULT_SINK@ toggle && showvolume -m
+  pactl set-sink-mute @DEFAULT_SINK@ toggle && show-volume -m
 XF86AudioRaiseVolume
-  pactl set-sink-volume @DEFAULT_SINK@ +5% && showvolume -l
+  pactl set-sink-volume @DEFAULT_SINK@ +5% && show-volume -l
 XF86AudioLowerVolume
-  pactl set-sink-volume @DEFAULT_SINK@ -5% && showvolume -l
+  pactl set-sink-volume @DEFAULT_SINK@ -5% && show-volume -l
+Print
+  maim -g 1920x1080+0+0 ~/capture.png
 
 super + Escape
 	pkill -USR1 -x sxhkd
 super + F1
-	ntfy
+	ntfy-test
 super + F2
-	showtime
+	show-time
 super + F3
-	showclip
+	show-clip
 super + F4
-	torr
+	torr-init
 
 # quit/restart bspwm
 super + alt + {q,r}

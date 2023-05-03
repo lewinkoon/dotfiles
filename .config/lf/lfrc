@@ -13,7 +13,7 @@ map <enter> shell
 map x $$f
 map X !$f
 map e &unzip $f
-map w &setbg $f
+map w &wall-paper $f
 map o &mimeopen $f
 map O $mimeopen --ask $f
 map a push :newfile<space>

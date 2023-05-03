@@ -5,13 +5,14 @@ export WALLPAPER="$HOME/.config/wallpaper"
 # Default programs:
 export EDITOR="nvim"
 export TERMINAL="alacritty"
-export BROWSER="google-chrome-stable"
+export BROWSER="firefox"
 export READER="zathura"
 export FILE="lf"
 
 # ~/ Clean-up:
 export FZF_DEFAULT_COMMAND="find ."
 export GNUPGHOME="$HOME/.config/gnupg"
+export IDF_TOOLS_PATH="$HOME/.config/espressif"
 export LESSHISTFILE="-"
 export PASSWORD_STORE_DIR="$HOME/.local/share/password-store"
 export RUSTUP_HOME="$HOME/.config/rustup"
