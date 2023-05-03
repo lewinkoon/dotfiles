@@ -14,14 +14,19 @@ alias \
 	rm="rm -v" \
 	bc="bc -ql" \
 	mkd="mkdir -pv" \
-	ls="exa --tree --icons --group-directories-first --level=2" \
+	ls="exa --group-directories-first" \
   cat="bat" \
 	grep="grep --color=auto" \
 	ka="killall" \
 	sdn="shutdown -h now" \
 	p="pacman" \
   dot="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME" \
-  td="transmission-daemon"
+  td="transmission-daemon" \
+  espc="idf.py menuconfig --style monochrome" \
+  espb="idf.py build" \
+  espf="idf.py -p /dev/ttyUSB0 -b 115200 flash monitor" \
+  espm="idf.py -p /dev/ttyUSB0 monitor" \
+  esps="source $HOME/build/esp-idf/export.sh"
 
 # change directory
 alias \
