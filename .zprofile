@@ -24,6 +24,8 @@ export ZDOTDIR="$HOME/.config/zsh"
 # other program
 export SUDO_ASKPASS="$HOME/.local/bin/dpass"
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
+export GOPATH="$HOME/.config/go"
+export GOMODCACHE="$HOME/.config/go/pkg/mod"
 
 # Redirect xorg logs
 [[ $(fgconsole 2>/dev/null) == 1 ]] && exec startx -- vt1 &> /dev/null
